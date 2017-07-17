@@ -64,11 +64,13 @@ function cardCreator(){
                 var card = newCard.cloze.toLowerCase();
                 if (card === answer){
                     console.log("Correct!\n");
+                    console.log(newCard.fullText);
                     console.log("=====================================================\n");
                     correctAnswer++;
                 }else{
                     console.log("Wrong!\n");
-                    console.log("Correct Answer is: "+newCard.cloze+"\n");
+                    console.log("Correct Answer is: "+newCard.cloze);
+                    console.log(newCard.fullText);
                     console.log("=====================================================\n");
                     wrongAnswer++;
                 };
